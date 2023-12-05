@@ -1,13 +1,36 @@
 import { Component } from 'react';
 import ZingTouch from 'zingtouch';
-import IpodStyle from "./ipod.module.css"
+import "./ipod.css"
+import { Screen } from '../Screen/Screen';
+import { Control } from '../Controls/Control';
 
-export class Ipod extends Component {   
+export class Ipod extends Component {
+    constructor() {
+        super();
+        this.state = {
+            change: 0
+        }
+    }
+    
+    componentDidMount() {
+        const container = document.getElementById("ControlButton");
+        const region = new ZingTouch.Region(container);
+        const iPodRef = this;
+        region.bind(container, 'rotate', function(e) {
+            console.log(iPodRef.state.change);
+            iPodRef.setState(prev => {
+                return {
+                    change: prev.change + e.detail.distanceFromLast
+                }
+            });
+        });
+    }
     render() {
         return (
             <>
-                <div className={IpodStyle.Container}>
-
+                <div id="Container">
+                    <Screen />
+                    <Control />
                 </div>
             </>
         );

@@ -1,0 +1,30 @@
+#ControlButton {
+    width: 70%;
+    height: 35%;
+    background-color: white;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
+}
+
+.center-button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 40%;
+    margin: 8px 0;
+}
+
+.center-button {
+    background-color: #a99d9d;
+    width: 50%;
+    height: 90%;
+    border-radius: 50%;
+    margin: 12px;
+}

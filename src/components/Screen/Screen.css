@@ -1,0 +1,8 @@
+.ScreenContainer {
+    width: 92%;
+    background-color: white;
+    height: 50%;
+    margin: 12px 5px;
+    box-sizing: border-box;
+    border-radius: 10%;
+}

@@ -1,0 +1,10 @@
+#Container {
+    width: 17vw;
+    height: 50vh;
+    background-color: #a99d9d;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

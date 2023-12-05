@@ -1,10 +1,9 @@
-import "./styles.css";
 import { Ipod } from "./components/Iphod/Iphod";
-import appStyle from "./app.module.css";
+import "./app.css";
 
 export default function App() {
   return (
-    <div className={appStyle.App}>
+    <div className= "App">
       <Ipod />
     </div>
   );
