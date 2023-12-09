@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
     padding: 5px 5px;
+    font-size: 0.9rem;
 }
 
 .center-button-container {
@@ -27,4 +28,8 @@
     height: 90%;
     border-radius: 50%;
     margin: 12px;
+}
+
+.disabled{
+    pointer-events: none;
 }

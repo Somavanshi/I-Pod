@@ -10,14 +10,19 @@ ul {
     border-radius: 50% 0 0 50%;
     box-sizing: border-box;
     height: 100%;
+    font-weight: 600;
 }
 
 .item-list {
     background-color: white;
     width: 45%;
-    border-radius: 10% 0 0 10%;
+    /* border-radius: 10% 0 0 10%; */
     height: 100%;
     box-sizing: border-box;
+    /* border: 2px solid black; */
+    border-right: none;
+    border-bottom: none;
+    overflow: hidden;
 }
 
 ul li {
@@ -27,6 +32,12 @@ ul li {
     align-items: center;
     justify-content: center;
 
+}
+
+@media screen and (max-width: 1000px) {
+    ul {
+        font-size: 0.6rem;
+    }
 }
 
 .active {

@@ -5,6 +5,21 @@
     margin: 12px 5px;
     box-sizing: border-box;
     border-radius: 10%;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.Background {
     background-image: url("../../assets/images/image.jpg");
+    background-size:fit;
+}
+
+.game-background {
+    background-image: url("../../assets/images/game.gif");
+    background-size:cover;
+}
+
+.setting-background {
+    background-image: url("../../assets/images/setting.png");
     background-size:cover;
 }
